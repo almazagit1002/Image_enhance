@@ -1,0 +1,13 @@
+
+tensorflow
+tensorflow_hub
+notebook
+pandas
+numpy
+scikit-learn
+matplotlib
+opencv-python
+python-box==7.1.1
+ensure==1.0.4
+imageio
+-e .

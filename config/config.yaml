@@ -1,0 +1,6 @@
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  url: https://user-images.githubusercontent.com/12981474/40157448-eff91f06-5953-11e8-9a37-f6b5693fa03f.png
+  save_img_original: artifacts/data_ingestion/monkey.png
+  save_img_low_res: artifacts/data_ingestion/monkey_low_res.png
+
