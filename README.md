@@ -69,7 +69,7 @@ if the user wants to use a different image, modify the url in:
 ```
 
 ## Results
-![Sample Image](comparative_plot.pdf)
+![Sample Image](comparative_plot.png)
 
 ## Docker
 
