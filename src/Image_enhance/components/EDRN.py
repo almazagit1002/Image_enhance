@@ -71,6 +71,7 @@ class ImageEnhancer():
         try:
             # Load the pre-trained model
             model_url = self.config.model_url
+            save_high_res_img_path = self.config.save_high_res_img
             model = hub.load(model_url)
             logger.info(f"Model loaded successfully from {model_url}")
 
@@ -84,7 +85,7 @@ class ImageEnhancer():
             logger.info(f"Low resolution image components {image_tensor.shape}")
             logger.info(f"High resolution image components {high_res_img.shape}")
             
-            return high_res_img
+            imageio.imwrite(save_high_res_img_path, high_res_img)
         except Exception as e:
             logger.error(f"Error enhancing image: {e}")
             return None

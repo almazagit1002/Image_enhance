@@ -18,16 +18,16 @@ def update_pca_components(params_file_path):
         with open(params_file_path, 'w') as yaml_file:
             yaml.dump(data, yaml_file)
 
-        logger.error(f"Updated PCA_COMPONENTS value has been written to {params_file_path}")
+        logger.info(f"Updated PCA_COMPONENTS value has been written to {params_file_path}")
     except Exception as e:
         print(f"Error updating PCA_COMPONENTS: {e}")
 
 # Function to execute a stage of the pipeline
 def execute_pipeline_stage(stage_name, pipeline_instance):
     try:
-        logger.error(f">>>>>>> stage {stage_name} started <<<<<<<<<<<<")
+        logger.info(f">>>>>>> stage {stage_name} started <<<<<<<<<<<<")
         pipeline_instance.main()
-        logger.error(f">>>>>>> stage {stage_name} completed <<<<<<<<<<<<\n\nx===============x")
+        logger.info(f">>>>>>> stage {stage_name} completed <<<<<<<<<<<<\n\nx===============x")
     except Exception as e:
         logger.error(f"Error in stage {stage_name}: {e}")
         raise e

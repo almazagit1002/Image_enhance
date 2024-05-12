@@ -12,5 +12,5 @@ comparative_plot:
   load_img_low_res: artifacts/data_ingestion/monkey_low_res.png
   load_img_original: artifacts/data_ingestion/monkey.png
   load_img_high_res: artifacts/data_ingestion/monkey_high_res.png
-  save_comp_plot: artifacts/data_ingestion/comparative_plot.png
+  save_comp_plot: comparative_plot.pdf
   title: Low Resolution vs Original vs High Resolution
