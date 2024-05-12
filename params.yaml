@@ -1,6 +1,4 @@
-PCA: 
-  PCA_COMPONENTS: 12
-
 ENHANCE:
   MODEL_URL: https://tfhub.dev/captain-pool/esrgan-tf2/1
-
+PCA:
+  PCA_COMPONENTS: 6
