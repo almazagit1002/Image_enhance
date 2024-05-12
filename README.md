@@ -21,7 +21,9 @@ pip freeze > requirements.txt
 Before running the FastAPI API and client examples, make sure you have the following installed:
 
 Python (version >= 3.6)
-Installation
+
+### Installation
+
 Clone the Repository:
 
 ```bash
