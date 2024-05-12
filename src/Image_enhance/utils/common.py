@@ -9,11 +9,10 @@ from box import ConfigBox
 from pathlib import Path
 import os
 from PIL import Image
-import warnings
 import numpy as np
 import tensorflow as tf
 
-
+import warnings
 warnings.filterwarnings("ignore")
 
 
@@ -55,17 +54,3 @@ def create_directories(path_to_directories: list, verbose=True):
         os.makedirs(path, exist_ok=True)
         if verbose:
             logger.info(f"created directory at: {path}")
-
-def plot_image(image, title=""):
-  """
-    Plots images from image tensors.
-    Args:
-      image: 3D image tensor. [height, width, channels].
-      title: Title to display in the plot.
-  """
-  image = np.asarray(image)
-  image = tf.clip_by_value(image, 0, 255)
-  image = Image.fromarray(tf.cast(image, tf.uint8).numpy())
-  plt.imshow(image)
-  plt.axis("off")
-  plt.title(title)

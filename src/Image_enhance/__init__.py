@@ -1,6 +1,8 @@
 import os 
 import sys
 import logging
+import warnings
+warnings.filterwarnings("ignore")
 
 logging_str = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s:]"
 
