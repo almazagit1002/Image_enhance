@@ -74,3 +74,19 @@ if the user wants to use a different image, modify the url in:
 ## Docker
 
 ### Build Docker Image
+
+
+Use the following command to build the Docker image for the Pinecone Pipeline:
+```bash
+docker build -t Image_enhancer .
+```
+This command will build the Docker image using the provided Dockerfile (Dockerfile) in the current directory (.). The -t flag is used to tag the image with the name Image_enhancer for easy reference.
+
+### Run Docker Container
+This command starts a new Docker container named blog_upload from the Image_enhancer Docker image. The --name flag is used to specify a custom name for the container. The container will execute the command specified in the Dockerfile (CMD ["python3", "main.py"]), which in this case runs the main.py script of the Image Enhancer Pipeline.
+
+Once the Docker image is built, you can run a Docker container from it using the following command:
+```bash
+docker run --name enhancement-pipeline Image_enhancer
+```
+Feel free to adjust the container name or image tag as needed. Ensure that you have Docker installed and properly configured on your system before running these commands.
