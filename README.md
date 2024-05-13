@@ -10,12 +10,6 @@
 6. Update the pipeline in src\Image_enhance\pipeline
 7. Update the main.py
 8. Update the app.py
-## create initial documentation
-
-To create mkdocs run:
-```bash
-mkdocs new .
-```
 
 ## Generate requiremnets
 
@@ -51,6 +45,14 @@ python3 -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+
+## Create initial documentation
+
+To create mkdocs run:
+```bash
+mkdocs new .
+```
+
 
 ## System Summary
 
@@ -101,7 +103,7 @@ Feel free to adjust the container name or image tag as needed. Ensure that you h
 
 ## Documentation
 
-To run in local host run:
+See documentation in local host run:
 
 ```bash
 mkdocs serve 
