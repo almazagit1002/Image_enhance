@@ -3,14 +3,13 @@
 ## Workflows
 
 1. Update config.yaml
-2. Update schema.yaml
-3. Update params.yaml
-4. Update the entity in src\Image_enhance\entity\config_entity.py
-5. Update the configuration manager in src\Image_enhance\config\configuration.py
-6. Update the components in src\Image_enhance\components
-7. Update the pipeline in src\Image_enhance\pipeline
-8. Update the main.py
-9. Update the app.py
+2. Update params.yaml
+3. Update the entity in src\Image_enhance\entity\config_entity.py
+4. Update the configuration manager in src\Image_enhance\config\configuration.py
+5. Update the components in src\Image_enhance\components
+6. Update the pipeline in src\Image_enhance\pipeline
+7. Update the main.py
+8. Update the app.py
 
 ## Generate requiremnets
 
@@ -71,6 +70,7 @@ if the user wants to use a different image, modify the url in:
 ```
 
 ## Results
+Using 6 PCA components and the previously mentioned image the results are the following:
 ![Sample Image](comparative_plot.png)
 
 ## Docker
@@ -92,3 +92,15 @@ Once the Docker image is built, you can run a Docker container from it using the
 docker run --name enhancement-pipeline Image_enhancer
 ```
 Feel free to adjust the container name or image tag as needed. Ensure that you have Docker installed and properly configured on your system before running these commands.
+
+## Documentation
+
+To create mkdocs run:
+```bash
+mkdocs new .
+```
+To run in local host run:
+
+```bash
+mkdocs serve 
+```
